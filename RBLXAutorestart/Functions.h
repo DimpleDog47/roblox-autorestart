@@ -11,10 +11,6 @@ public:
 	void RunBrowsers();
 	void KillBrowsers();
 	void LockWindow();
-	double GetRam();
-	double GetThreads();
-	bool HasEnoughRam();
-	bool HasEnoughThreads();
 	bool FindString(const char* a, const char* b);
 	int CountInstances();
 	bool IsProcessRunning(const TCHAR* const executableName);
@@ -27,8 +23,8 @@ public:
 	int RestartTime = 0;
 	bool OnlyVIP = false;
 	bool SafeMode = false;
-	bool MinimizeRoblox = false;
-	bool DetectErrors = false;
+	bool MinimizeRoblox = true;
+	bool DetectErrors = true;
 	bool DetectSynapse = false;
 };
 
